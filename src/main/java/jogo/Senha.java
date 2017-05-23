@@ -81,8 +81,8 @@ public class Senha {
 	}
 
 	/**
-	 * esse método pega um pino(String com cor do pino) no atributo
-	 * "String [] senha" da classe.
+	 * esse método pega um pino(String com cor do pino) no atributo "String []
+	 * senha" da classe.
 	 * 
 	 * @param posicao
 	 *            indica o índice onde o pino está inserido na senha.
