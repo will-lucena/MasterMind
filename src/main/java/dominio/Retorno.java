@@ -66,7 +66,23 @@ public class Retorno {
 			throw new PosicaoInvalidaException();
 		}
 	}
-
+	
+	/**
+	 * 
+	 * @param posicao
+	 *            de 0 a 3 (válida) senão exception é lançada
+	 * @return cor do pino que está naquela posição
+	 * @throws PosicaoInvalidaException
+	 */
+	/* Corrigido
+	public String getPino(int posicao) throws PosicaoInvalidaException {
+		if (posicao >= 0 && posicao <= pinosInseridos) {
+			return retorno[posicao];
+		} else {
+			throw new PosicaoInvalidaException();
+		}
+	}
+	/**/
 	/**
 	 * 
 	 * @return quantidade de pinos inseridos
