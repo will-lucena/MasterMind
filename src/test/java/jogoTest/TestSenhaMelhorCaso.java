@@ -16,10 +16,13 @@ import jogo.Senha;
 
 @RunWith(Parameterized.class)
 public class TestSenhaMelhorCaso {
-
-	public TestSenhaMelhorCaso(boolean expected, String actual) {
-		this.expected = expected;
-		this.actual = actual;
+	private boolean valido;
+	private String cor;
+	private Senha senha;
+	
+	public TestSenhaMelhorCaso(boolean valido, String cor) {
+		this.valido = valido;
+		this.cor = cor;
 		this.senha = new Senha();
 	}
 
@@ -37,20 +40,15 @@ public class TestSenhaMelhorCaso {
 		});
 	}
 
-	private boolean expected;
-	private String actual;
-
-	private Senha senha;
-
 	@Test
 	public void testAdicionarPino() throws CorInvalidaException, PosicaoInvalidaException {
-		senha.adicionarPino(actual);
-		assertEquals(actual, senha.getPino(0));
+		senha.adicionarPino(cor);
+		assertEquals(cor, senha.getPino(0));
 	}
 
 	@Test
 	public void testCorEhValida() {
-		assertEquals(expected, senha.CorEhValida(actual));
+		assertEquals(valido, senha.CorEhValida(cor));
 	}
 
 }
