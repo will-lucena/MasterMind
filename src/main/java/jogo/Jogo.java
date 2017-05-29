@@ -41,6 +41,18 @@ public class Jogo {
 		jogada = null;
 	}
 
+	public void setTurno(int turno) {
+		this.turno = turno;
+	}
+
+	public void setFornecedor(FornecedorDaSenha fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+
+	public void setAdivinho(Adivinho adivinho) {
+		this.adivinho = adivinho;
+	}
+
 	public int getTurno() {
 		return turno;
 	}
