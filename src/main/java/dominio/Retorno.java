@@ -90,5 +90,4 @@ public class Retorno {
 	public int getPinosInseridos() {
 		return pinosInseridos;
 	}
-
 }

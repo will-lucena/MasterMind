@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import dominio.Jogada;
-import dominio.Retorno;
 import exceptions.CorInvalidaException;
 import exceptions.PosicaoInvalidaException;
 import jogo.Tentativa;

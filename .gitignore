@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 .settings/
 .classpath
 .project
 /target/
+=======
+.settings/
+.classpath
+.project
+/target/
+>>>>>>> branch 'master' of https://github.com/will-lucena/MasterMind.git
 /bin/
