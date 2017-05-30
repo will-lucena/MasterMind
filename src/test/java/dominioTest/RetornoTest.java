@@ -38,6 +38,6 @@ public class RetornoTest
 		Retorno retorno = new Retorno();
 		retorno.adicionarPino("branco");
 	
-		Assert.assertEquals("branco", retorno.getPino(3));
+		Assert.assertEquals("branco", retorno.getPino(0));
 	}	
 }

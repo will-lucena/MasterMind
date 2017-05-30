@@ -11,10 +11,6 @@ import jogo.Tentativa;
 
 public class AdivinhoTest {
 
-	@Test
-	public void test() {
-	//	fail("Not yet implemented");
-	}
 
 	public void realizarTentativaOk(){
 		Jogada j = new Jogada();
@@ -28,12 +24,6 @@ public class AdivinhoTest {
 		Tentativa t = new Tentativa();
 		j.setTentativa(t);
 		assertEquals(t, j.getTentativa());
-	}
-	
-	public void jogarOk(){
-		
-		
-		
 	}
 	
 	public void adicionarNovoPinoATentativaOk() throws PosicaoInvalidaException, CorInvalidaException{
