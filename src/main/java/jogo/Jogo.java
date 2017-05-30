@@ -139,16 +139,21 @@ public class Jogo {
 	 * feita pelo adivinho(o usuário que está jogando) para tentar descobrir a
 	 * senha.
 	 */
-	public void mostrarPinosTentativaDaJogada() {
+	@SuppressWarnings("finally")
+	public int mostrarPinosTentativaDaJogada() {
+		int quantidadePinos = 0;
 		try {
 			Tentativa tentativa = this.jogada.getTentativa();
 			System.out.println("A tentativa da jogada foi:");
 			for (int i = 0; i < tentativa.quantosPinosJaForamAdicionados(); i++) {
 				System.out.println(tentativa.getPino(i));
+				quantidadePinos++;
 			}
 			System.out.println(" ");
 		} catch (PosicaoInvalidaException e) {
 			System.out.println("erro ao tentar acessar pinos de um retorno de uma jogada");
+		} finally {
+			return quantidadePinos;
 		}
 	}
 
